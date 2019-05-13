@@ -6,11 +6,11 @@ ckan extension for setting access for the route `/about`
 
 The extension set the access for the `/about` page. Only the user name as `hp` **(not uppercase)** can see the `/about` page
 
-But note that **admin_user** always have the access to all the stuff, so you may want to use the normal user
+But note that **admin_user** always have the access to all the stuff, so you may want to use the normal user to try the extension
 
 # Set up
 
-1. download the extension using 
+1. download the extension using `git clone https://git.indocresearch.org/ckanext/ckanext-iauthfunctions-about.git`
 
 2. run the `python setup.py develop` to install the plugin
 

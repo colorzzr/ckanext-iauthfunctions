@@ -10,13 +10,27 @@ But note that **admin_user** always have the access to all the stuff, so you may
 
 # Set up
 
-1. download the extension using `git clone https://git.indocresearch.org/ckanext/ckanext-iauthfunctions-about.git`
+1. download the extension using 
 
-2. run the `python setup.py develop` to install the plugin
+```
+git clone https://git.indocresearch.org/ckanext/ckanext-iauthfunctions-about.git
+```
 
-3. add the `ckanext-iauthfunctions` to `ckan.plugins` attribute in the `development.ini` file
+2. Active the virtual environment
 
-4. replace the function `def about()` in file `ckan/ckan/views/home.py` below:
+```
+. /usr/lib/ckan/default/bin/activate
+```
+
+3. to install the plugin
+
+```
+python setup.py develop
+```
+
+4. add the `ckanext-iauthfunctions` to `ckan.plugins` attribute in the `development.ini` file
+
+5. replace the function `def about()` in file `ckan/ckan/views/home.py` below:
 
 ```
 def about():
@@ -29,6 +43,10 @@ def about():
     return base.render(u'home/about.html', extra_vars={})
 ```
 
-5. then run the command `paster serve /etc/ckan/default/development.ini` **under the virtual environment**
+6. then run the command **under the virtual environment**
+
+```
+paster serve /etc/ckan/default/development.ini
+```
 
 

@@ -19,6 +19,7 @@ git clone https://git.indocresearch.org/ckanext/ckanext-iauthfunctions-about.git
 2. Active the virtual environment
 
 ```
+cd ckanext-iauthfunctions-about
 . /usr/lib/ckan/default/bin/activate
 ```
 
@@ -28,7 +29,7 @@ git clone https://git.indocresearch.org/ckanext/ckanext-iauthfunctions-about.git
 python setup.py develop
 ```
 
-4. add the `ckanext-iauthfunctions` to `ckan.plugins` attribute in the `development.ini` file
+4. add the `iauthfunctions` to `ckan.plugins` attribute in the `development.ini` file
 
 5. replace the function `def about()` in file `ckan/ckan/views/home.py` below:
 
